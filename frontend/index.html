@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Buch-Verwaltung - Übersicht</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main class="container">
+		<section class="card">
+			<h1>Buch-Verwaltung</h1>
+			<p class="subtitle">Alle verfügbaren Bücher anzeigen.</p>
+			<p id="feedback" class="feedback"></p>
+		</section>
+
+		<section class="card">
+			<header>
+				<h2>Bücher</h2>
+				<a class="link-button" href="add-book.html">Neues Buch</a>
+			</header>
+			<div class="table-wrapper">
+				<table>
+					<thead>
+						<tr>
+							<th>Titel</th>
+							<th>Autor</th>
+							<th>Genre</th>
+							<th>Jahr</th>
+							<th>Verfügbar</th>
+						</tr>
+					</thead>
+					<tbody id="booksList">
+						<tr>
+							<td colspan="5">Lade Bücher...</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</main>
+
+	<script src="index.js"></script>
+</body>
+</html>

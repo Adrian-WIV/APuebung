@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Buch-Verwaltung - Neues Buch</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main class="container">
+		<section class="card">
+			<header>
+				<h1>Neues Buch hinzufügen</h1>
+				<a class="link-button" href="index.html">Zurück zur Übersicht</a>
+			</header>
+
+			<form id="addBookForm">
+				<label for="bookTitle">Titel</label>
+				<input id="bookTitle" type="text" required placeholder="z.B. Der Hobbit">
+
+				<label for="bookAuthor">Autor</label>
+				<input id="bookAuthor" type="text" required placeholder="z.B. J.R.R. Tolkien">
+
+				<label for="bookGenre">Genre</label>
+				<select id="bookGenre" required>
+					<option value="" disabled selected>Loading ...</option>
+				</select>
+
+				<label for="bookYear">Erscheinungsjahr</label>
+				<input id="bookYear" type="number" min="1000" max="2100">
+
+				<label for="bookAvailable">Verfügbar</label>
+				<input id="bookAvailable" type="checkbox" checked>
+
+				<button type="submit">Buch speichern</button>
+			</form>
+
+			<p id="feedback" class="feedback"></p>
+		</section>
+	</main>
+
+	<script src="add-book.js"></script>
+</body>
+</html>
