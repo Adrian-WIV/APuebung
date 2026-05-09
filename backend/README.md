@@ -8,7 +8,7 @@ Diese Übung behandelt die Erstellung einer einfachen Buch-Verwaltungsanwendung 
 
 1. **Endpunkte in `main.py` implementieren:**
    - GET `/api/books` - alle Bücher abrufen
-   - GET `/api/books/<book_id>` - ein spezifisches Buch abrufen
+   - GET `/api/books/genre/<genre_id>` - Bücher eines Genres abrufen (mit Variable!)
    - POST `/api/books` - ein neues Buch hinzufügen
    - GET `/api/genres` - alle verfügbaren Genres laden (für Dropdown)
 

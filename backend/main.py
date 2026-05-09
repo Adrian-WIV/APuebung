@@ -13,7 +13,7 @@ def get_connection():
 # ========== DEINE ENDPUNKTE ==========
 # Implementiere hier die fehlenden Endpunkte:
 # 1. GET /api/books - alle Bücher abrufen
-# 2. GET /api/books/<book_id> - ein spezifisches Buch abrufen (mit Variable!)
+# 2. GET /api/books/genre/<genre_id> - Bücher eines Genres (mit Variable!)
 # 3. POST /api/books - ein neues Buch hinzufügen
 # 4. GET /api/genres - alle Genres laden
 

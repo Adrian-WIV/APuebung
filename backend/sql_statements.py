@@ -35,6 +35,14 @@ JOIN genres g ON b.genre_id = g.id
 WHERE b.id = ?
 """
 
+GET_BOOKS_BY_GENRE = """
+SELECT b.id, b.title, b.author, g.name as genre, b.year, b.available
+FROM books b
+JOIN genres g ON b.genre_id = g.id
+WHERE b.genre_id = ?
+ORDER BY b.title
+"""
+
 GET_ALL_GENRES = """
 SELECT id, name FROM genres ORDER BY name
 """
