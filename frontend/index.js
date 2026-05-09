@@ -19,7 +19,6 @@ async function loadBooks() {
 
 /**
  * Lädt Bücher eines bestimmten Genres und zeigt sie an.
- * @param {string} genreId - Die Genre-ID zum Filtern
  */
 async function loadBooksByGenre(genreId) {
 	// TODO: Implementiere GET-Request zu /api/books/genre/<genreId> (mit Variable!)
@@ -28,7 +27,6 @@ async function loadBooksByGenre(genreId) {
 
 /**
  * Zeigt die Bücher in der Tabelle an.
- * @param {Array} books - Array von Buch-Objekten
  */
 function displayBooks(books) {
 	// TODO: Implementiere die Darstellung der Bücher in der Tabelle
@@ -37,7 +35,6 @@ function displayBooks(books) {
 
 /**
  * Zeigt eine Fehlermeldung an.
- * @param {string} message - Die Fehlermeldung
  */
 function showError(message) {
 	// TODO: Zeige die Fehlermeldung in id="feedback"

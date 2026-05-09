@@ -11,7 +11,6 @@ async function loadGenres() {
 
 /**
  * Speichert ein neues Buch via POST-Request.
- * @param {Object} bookData - Objekt mit: title, author, genre_id, year, available
  */
 async function saveBook(bookData) {
 	// TODO: Implementiere POST-Request zu /api/books
@@ -22,8 +21,6 @@ async function saveBook(bookData) {
 
 /**
  * Zeigt eine Nachricht (Erfolg oder Fehler) an.
- * @param {string} message - Die Nachricht
- * @param {string} type - 'success' oder 'error'
  */
 function showMessage(message, type) {
 	// TODO: Zeige die Nachricht in id="feedback" an
